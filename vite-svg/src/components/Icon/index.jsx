@@ -1,13 +1,20 @@
-import { ReactComponent as Search } from "../../icons/search.svg";
+import { ReactComponent as Search } from "./icons/search.svg";
+import { ReactComponent as Star } from "./icons/star.svg";
 
-export function Icon({ color, ...rest }) {
+const icons = {
+  Search,
+  Star,
+};
+
+export function Icon({ icon, color, ...rest }) {
+  const Component = icons[icon];
   const styles = {
     fill: color,
   };
 
   return (
     <div style={styles}>
-      <Search {...rest} />
+      <Component {...rest} />
     </div>
   );
 }
