@@ -1,5 +1,7 @@
+import { Icon } from "./components/Icon";
+
 import "./App.css";
 
 export function App() {
-  return <>App</>;
+  return <Icon />;
 }
