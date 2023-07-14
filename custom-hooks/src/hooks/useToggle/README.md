@@ -29,3 +29,5 @@ Here's an example demonstrating the usage of the useToggle hook:
         }
 
         export default Example;
+
+In this example, the ExampleComponent renders a paragraph displaying the current value of the boolean state and a button that triggers the toggleValue function when clicked.
