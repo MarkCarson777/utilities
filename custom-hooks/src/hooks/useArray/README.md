@@ -64,4 +64,4 @@ Here's an example usage of the useArray hook:
 
         export default Example;
 
-In the above example, the useArray hook is used to manage an array state (array). Elements are added to the array using the push function, filtered using the filter function, updated using the update function, removed using the remove function, and cleared using the clear function. The resulting array is rendered as a list in the component.
+In this example, the useArray hook is used to manage an array state. Elements are added to the array using the push function, filtered using the filter function, updated using the update function, removed using the remove function, and cleared using the clear function. The resulting array is rendered as a list in the component.
