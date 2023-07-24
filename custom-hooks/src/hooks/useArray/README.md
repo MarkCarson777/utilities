@@ -24,6 +24,8 @@ _remove(index: number)_: A function to remove an element at a specific index fro
 
 _clear()_: A function to clear the array by setting it to an empty array.
 
+_merge(arrays: Array)_: A function to concatenate multiple arrays. It takes an array of arrays and merges them into a single array.
+
 ## Example
 
 Here's an example usage of the useArray hook:
@@ -32,7 +34,7 @@ Here's an example usage of the useArray hook:
         import useArray from './useArray';
 
         function Example() {
-          const { array, push, filter, update, remove, clear } = useArray([]);
+          const { array, push, filter, update, remove, clear, merge } = useArray([]);
 
           // Adding elements to the array
           push('Apple');
@@ -51,6 +53,9 @@ Here's an example usage of the useArray hook:
           // Clearing the array
           clear();
 
+          // Merging arrays
+          merge([[1, 2, 3], [4, 5, 6], ["hello"]])
+
           return (
             <div>
               <ul>
@@ -64,4 +69,4 @@ Here's an example usage of the useArray hook:
 
         export default Example;
 
-In this example, the useArray hook is used to manage an array state. Elements are added to the array using the push function, filtered using the filter function, updated using the update function, removed using the remove function, and cleared using the clear function. The resulting array is rendered as a list in the component.
+In this example, the useArray hook is used to manage an array state. Elements are added to the array using the push function, filtered using the filter function, updated using the update function, removed using the remove function, cleared using the clear function and merged using the merge function. The resulting array is rendered as a list in the component.
