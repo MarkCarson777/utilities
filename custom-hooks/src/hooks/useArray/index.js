@@ -30,5 +30,45 @@ export default function useArray(defaultValue) {
     setArray([]);
   }
 
-  return { array, set: setArray, push, filter, update, remove, clear };
+  function merge(arrays) {
+    const newArray = [];
+
+    for (const arr of arrays) {
+      newArray.push(...arr);
+    }
+
+    setArray(newArray);
+  }
+
+  // TODO unshift
+
+  // TODO pop
+
+  // TODO shift
+
+  // TODO map
+
+  // TODO sort
+
+  // TODO reverse
+
+  // TODO find
+
+  // TODO join
+
+  // TODO flat
+
+  // TODO at
+
+  // TODO some
+
+  // TODO every
+
+  // TODO reduce
+
+  // TODO includes
+
+  // TODO from
+
+  return { array, set: setArray, push, filter, update, remove, clear, merge };
 }
